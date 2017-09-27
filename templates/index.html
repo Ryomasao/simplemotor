@@ -1,7 +1,14 @@
 <!doctype html>
 <head>
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='motor.js') }}"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css">
 	<title> {{ title }} </title>
-<head>
-<h1>Hello World</h1>
+</head>
 
+<div class="container">
+	<input class="toggle" id="left-toggle" type="radio" name="toggle" checked>
+	<label for="left-toggle" id="left-label">うごく</label>
+	<input class="toggle" id="right-toggle" type="radio" name="toggle">
+	<label for="right-toggle" id="right-label">とまる</label>
+</div>
